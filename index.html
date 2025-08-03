@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <script>
+        let info = `____________________\nBienvenido a la calculadora, elige una opcion:\n1. Suma\n2. Resta\n3. Multiplicacion\n4. Division\n5. Salir\n____________________`;
+        let opc = 0;
+        do {
+            opc = parseInt(prompt(info));
+            switch (opc) {
+                case 1:
+                    var num100 = parseFloat(prompt("1er num:"));
+                    var num200 = parseFloat(prompt("2do num:"));
+                    alert(`La suma de ${num100} y ${num200} es: ${num100 + num200}`);
+                    break;
+                case 2:
+                    var num1 = parseFloat(prompt("1er num:"));
+                    var num2 = parseFloat(prompt("2do num:"));
+                    alert(`La resta de ${num1} y ${num2} es: ${num1 - num2}`);
+                    break;
+                case 3:
+                    var num1 = parseFloat(prompt("1er num:"));
+                    var num2 = parseFloat(prompt("2do num:"));
+                    alert(`La multiplicacion  de ${num1} y ${num2} es: ${num1 * num2}`);
+                    break;
+                case 4:
+                    var num1 = parseFloat(prompt("1er num:"));
+                    var num2 = parseFloat(prompt("2do num:"));
+                    alert(`La division  de ${num1} y ${num2} es: ${num1 / num2}`);
+                    break;
+                case 5:
+                    alert(`Saliendo`);
+                    break;
+                default:
+                    alert("Opcion no valida");
+                    break;
+            }
+        } while (opc != 5);
+    </script>
+</body>
+
+</html>
